@@ -2,7 +2,9 @@
   "dependencies": {
     "@vue/cli": "^5.0.4",
     "@vue/cli-service": "^5.0.4",
-    "vue": "^3.2.31"
+    "vue": "^3.2.31",
+    "vue-burger-menu": "^2.0.5",
+    "vue-router": "^4.0.14"
   },
   "scripts": {
     "serve": "vue-cli-service serve",
