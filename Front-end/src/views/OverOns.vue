@@ -9,7 +9,7 @@
       <button><router-link to="/Contact">Contact</router-link></button>
     </div>
     <div class="aboutImage">
-      <img src="https://www.formula1.com/content/fom-website/en/drivers/max-verstappen/_jcr_content/image.img.640.medium.jpg/1646819045507.jpg">
+      <img src="@\assets\images\person_icon.png">
     </div>
   </div>
 </template>
