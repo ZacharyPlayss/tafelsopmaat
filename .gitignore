@@ -203,3 +203,4 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+Back-end/TafelsOpMaatWebAPI/.vs/TafelsOpMaatWebAPI/DesignTimeBuild/.dtbcache.v2
