@@ -2,18 +2,42 @@
   <div class="Realisaties">
       <h2>Realisaties</h2>
         <div class="realisatiesImgContainer">
-            <div class="images" id="image1">
-                 <img src="https://www.travelalut.com/wp-content/uploads/2017/08/kameel-rijden.jpg">
-            </div>
-            <div class="images" id="image2">
-                 <img src="https://www.travelalut.com/wp-content/uploads/2017/08/kameel-rijden.jpg">
-            </div>
-            <div class="images" id="image3">
-                 <img src="https://www.travelalut.com/wp-content/uploads/2017/08/kameel-rijden.jpg">
-            </div>
+            <!-- <div v-for="image in galleryImages" class="images">
+                <img src=" @\assets\images\{{image.locatie}}">
+            </div> -->
         </div>
   </div>
 </template>
+<script>
+export default{
+    data(){
+        return{
+            galleryImages: []
+        }
+    },
+    methods:{
+        fetchImages: function () {
+            let url = "https://localhost:44328/api/Galleryimages";
+            this.images = [];
+            fetch(url)
+            .then( (response) => {
+                if(response.status == 200){
+                    return response.json();
+                }
+                else{
+                    throw `Error with status ${response.status}`;
+                }
+            } )
+            .then((images) => {
+                this.galleryImages = images;
+            })
+            .catch((error) => {
+                this.error = error;
+            })
+        }
+    }
+}
+</script>
 <style>
 .Realisaties{
     height:var(--mainHeight);
