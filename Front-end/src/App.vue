@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="nav-Items">
-      <router-link to="/" class="active">Home</router-link> 
+      <router-link to="/">Home</router-link> 
       <router-link to="/about">Over ons</router-link>
       <router-link to="/Realisaties">Realisaties</router-link>
       <router-link to="/Contact">Contact</router-link>
@@ -102,7 +102,7 @@ footer{
   margin-left:5%;
   margin-top:2%;
 }
-.active{
+.router-link-exact-active{
   font-weight:900;
 }
 button{
