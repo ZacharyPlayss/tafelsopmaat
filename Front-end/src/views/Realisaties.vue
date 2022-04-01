@@ -25,8 +25,7 @@
     height:83%;
     display:flex;
     flex-direction:column;
-    overflow-x:hidden;
-    overflow-y:scroll !important;
+    overflow: hidden;
 }
 .images{
     margin-top:4%;
