@@ -5,6 +5,84 @@
             <!-- <div v-for="image in galleryImages" class="images">
                 <img src=" @\assets\images\{{image.locatie}}">
             </div> -->
+            <div class="images">
+                <img src="@\assets\gallery\foto1.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto2.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto3.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto4.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto5.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto6.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto7.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto8.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto9.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto10.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto11.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto12.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto13.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto14.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto15.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto16.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto17.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto18.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto19.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto20.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto21.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto22.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto23.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto24.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto25.jpg">
+            </div>
+            <div class="images">
+                <img src="@\assets\gallery\foto26.jpg">
+            </div>
         </div>
   </div>
 </template>
@@ -16,25 +94,25 @@ export default{
         }
     },
     methods:{
-        fetchImages: function () {
-            let url = "https://localhost:44328/api/Galleryimages";
-            this.images = [];
-            fetch(url)
-            .then( (response) => {
-                if(response.status == 200){
-                    return response.json();
-                }
-                else{
-                    throw `Error with status ${response.status}`;
-                }
-            } )
-            .then((images) => {
-                this.galleryImages = images;
-            })
-            .catch((error) => {
-                this.error = error;
-            })
-        }
+        // fetchImages: function () {
+        //     let url = "https://localhost:44328/api/Galleryimages";
+        //     this.images = [];
+        //     fetch(url)
+        //     .then( (response) => {
+        //         if(response.status == 200){
+        //             return response.json();
+        //         }
+        //         else{
+        //             throw `Error with status ${response.status}`;
+        //         }
+        //     } )
+        //     .then((images) => {
+        //         this.galleryImages = images;
+        //     })
+        //     .catch((error) => {
+        //         this.error = error;
+        //     })
+        // }
     }
 }
 </script>
