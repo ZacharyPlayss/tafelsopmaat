@@ -128,6 +128,7 @@ export default{
     display:flex;
     flex-direction:column;
     overflow: hidden;
+    flex-wrap: nowrap;  
 }
 .images{
     margin-top:4%;
@@ -141,6 +142,7 @@ export default{
 }
 .images{
     margin-left:4%;
+    width: 25vw;
 }
 }
 </style>
