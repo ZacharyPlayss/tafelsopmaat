@@ -12,9 +12,6 @@
                 <img src="@\assets\gallery\foto2.jpg">
             </div>
             <div class="images">
-                <img src="@\assets\gallery\foto3.jpg">
-            </div>
-            <div class="images">
                 <img src="@\assets\gallery\foto4.jpg">
             </div>
             <div class="images">
@@ -34,9 +31,6 @@
             </div>
             <div class="images">
                 <img src="@\assets\gallery\foto10.jpg">
-            </div>
-            <div class="images">
-                <img src="@\assets\gallery\foto11.jpg">
             </div>
             <div class="images">
                 <img src="@\assets\gallery\foto12.jpg">
@@ -128,7 +122,7 @@ export default{
     display:flex;
     flex-direction:column;
     overflow: hidden;
-    flex-wrap: nowrap;  
+    flex-wrap: wrap;  
 }
 .images{
     margin-top:4%;
@@ -138,11 +132,16 @@ export default{
     .realisatiesImgContainer{
     display:flex;
     flex-direction:row;
-    overflow:hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .images{
     margin-left:4%;
     width: 25vw;
 }
+Div > img { 
+    width: 100%;
+    height: auto;
+    }
 }
 </style>
