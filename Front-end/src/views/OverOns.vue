@@ -9,7 +9,7 @@
       <button><router-link to="/Contact">Contact</router-link></button>
     </div>
     <div class="aboutImage">
-      <img src="@\assets\images\portretfoto.jpeg">
+      <img src="@\assets\gallery\foto22.jpg">
     </div>
   </div>
 </template>
