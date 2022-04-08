@@ -11,7 +11,7 @@
             </div>
         <div class="irlContact">
             <h3>Of kom langs te:</h3>
-            <p>Kuringersteenweg 27A <br>
+            <p>Kuringersteenweg 275A <br>
             3500 Hasselt België</p>
         </div>
       </div>
