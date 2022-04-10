@@ -14,7 +14,7 @@
 <style>
 .Productinformatie{
     height:var(--mainHeight);
-    background:var(--productinfoImage) 100% no-repeat;
+    background:var(--productinfoImage) 100%/100% no-repeat;
 }
 
 .Productinformatie > ul{
@@ -22,12 +22,12 @@
     font-size:1.5rem;
     margin-left: var(--leftTextMargin);
     list-style-type:none;
-    margin-top:20%;
+    margin-top:5%;
 }
 .Productinformatie > p{
     color:var(--color2);
     font-size:1.5rem;
-    margin-top:20%;
+    margin-top:5%;
     margin-left: var(--leftTextMargin);
 }
 .Productinformatie > button{
@@ -36,11 +36,12 @@
 }
 @media (min-width:768px) {
     .Productinformatie > ul{
-         font-size:3rem;
+        margin-top:3%;
+         font-size:2rem;
     }
     .Productinformatie > p{
-    margin-top:5%;
-    font-size:2rem;
+    margin-top:2%;
+    font-size:1.5rem;
     }
 }
 @media (min-width:1385px) {

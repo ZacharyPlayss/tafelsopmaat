@@ -113,7 +113,7 @@ export default{
 <style>
 .Realisaties{
     height:var(--mainHeight);
-    background:var(--realisatiesImage) 100% no-repeat;
+    background:var(--realisatiesImage) 100%/100% no-repeat;
 }
 .realisatiesImgContainer{
     margin:0 auto;
@@ -126,9 +126,17 @@ export default{
 }
 .images{
     margin-top:4%;
-    height:500px;
+    height:15rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:white;
 }
-@media (min-width:768px) {
+div img {
+    height:100%;
+    object-fit:contain;
+}
+
     .realisatiesImgContainer{
     display:flex;
     flex-direction:row;
@@ -137,11 +145,16 @@ export default{
 }
 .images{
     margin-left:4%;
-    width: 25vw;
+    width: 90vw;
 }
-Div > img { 
-    width: 100%;
-    height: auto;
+@media (min-width:768px){
+    .images{
+        width:40vw;
+    }
+}
+@media (min-width:1200px){
+    .images{
+        width:25vw;
     }
 }
 </style>

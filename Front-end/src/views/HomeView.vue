@@ -24,7 +24,7 @@ export default {
     padding:0;
   }
   .home{
-    background:url("../assets/images/Tafel_1.png") no-repeat ;
+    background:url("../assets/images/Tafel_1.png") 100%/100% no-repeat  ;
     height:82vh;
     display:flex;
   }

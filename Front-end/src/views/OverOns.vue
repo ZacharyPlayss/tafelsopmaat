@@ -60,7 +60,7 @@ a{
 }
 @media (min-width:768px) {
   .about{
-  background:var(--overOnsImage) no-repeat 100%;
+  background:var(--overOnsImage) no-repeat 100%/100%;
   height:var(--mainHeight);
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -72,7 +72,7 @@ a{
     order:2;
   }
   .aboutText > p{
-   font-size:2rem;
+   font-size:1.75rem;
   }
 }
 @media (min-width:1385px) {

@@ -74,26 +74,28 @@ nav {
 
 }
 .nav-Items{
-  width:50%;
+  width:100%;
   height:100%;
   margin:0 auto;
-  margin-right:2%;
+  margin-right:3%;
   display:flex;
   justify-content:space-around;
   align-items:center;
   float:right;
   font-weight:500;
+  white-space:nowrap;
 }
 nav a {
   color:var(--black);
   text-decoration:none;
   font-size:0.7rem;
+  margin-left:5%;
 }
 footer{
   height:7vh;
-  font-size:0.5rem;
 }
 .footerList{
+  font-size:0.75rem;
   display:flex;
   flex-direction: row;
   justify-content:flex-start;
