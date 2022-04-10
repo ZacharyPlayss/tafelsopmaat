@@ -2,9 +2,6 @@
   <div class="Realisaties">
       <h2>Realisaties</h2>
         <div class="realisatiesImgContainer">
-            <!-- <div v-for="image in galleryImages" class="images">
-                <img src=" @\assets\images\{{image.locatie}}">
-            </div> -->
             <div class="images">
                 <img src="@\assets\gallery\foto1.jpg">
             </div>
