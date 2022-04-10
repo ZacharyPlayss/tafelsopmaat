@@ -1,5 +1,21 @@
 <template>
-  <nav>
+  <nav v-if="(pageWidth < 720)" v-bind:class="{hamNavActive: hamNavInner}">
+    <div class="hamNav-Icon">
+      <div v-on:click="hamNavInner = !hamNavInner">
+        <div class="navIconElement"/>
+        <div class="navIconElement"/>
+        <div class="navIconElement"/>
+      </div>
+    </div>
+    <div class="hamNav-Items"  v-bind:class="{hamNavInner: hamNavInner}">
+      <router-link to="/">Home</router-link> 
+      <router-link to="/about">Over ons</router-link>
+      <router-link to="/Realisaties">Realisaties</router-link>
+      <router-link to="/Contact">Contact</router-link>
+      <router-link to="/Productinformatie">Productinformatie</router-link>
+    </div>
+  </nav>
+  <nav v-else>
     <div class="nav-Items">
       <router-link to="/">Home</router-link> 
       <router-link to="/about">Over ons</router-link>
@@ -8,6 +24,7 @@
       <router-link to="/Productinformatie">Productinformatie</router-link>
     </div>
   </nav>
+
   <router-view/>
   <footer>
     <ul class="footerList">
@@ -29,7 +46,8 @@ export default {
  data(){
     return{
       pageHeight: window.innerHeight, 
-      pageWidth: window.innerWidth
+      pageWidth: window.innerWidth,
+      hamNavInner: false
     }
   },
 }
@@ -54,10 +72,10 @@ body{
   /*heights*/
     --mainHeight: 82vh;
   /*background_images*/
-    --contactImage: url("@/assets/images/contact_bg.jpg" );
-    --overOnsImage : url("@/assets/images/overOns_bg.png");
-    --realisatiesImage: url("@/assets/images/realisaties_bg.png");
-    --productinfoImage: url("@/assets/images/productinformatie_bg.png");
+    --contactImage: url("@/assets/images/contact.webp" );
+    --overOnsImage : url("@/assets/images/overOns.webp");
+    --realisatiesImage: url("@/assets/images/realisaties.webp");
+    --productinfoImage: url("@/assets/images/productinformatie.webp");
   /*margins*/
     --leftTextMargin: 7%;
     --leftTextMarginTop: 3%;
@@ -68,7 +86,6 @@ body{
 }
 
 nav {
-  padding:0.5rem;
   width:99vw;
   height:7vh;
 
@@ -89,7 +106,6 @@ nav a {
   color:var(--black);
   text-decoration:none;
   font-size:0.7rem;
-  margin-left:5%;
 }
 footer{
   height:7vh;
@@ -131,7 +147,46 @@ h2{
   font-size:2rem;
   color:var(--color2);
 }
-
+.hamNav-Items{
+  height:100%;
+  width:100%;
+  display:none;
+  flex-direction:column;
+  margin-top:5%;
+  font-size:3rem;
+  transition:all 0.5s ease-in-out;
+}
+.hamNav-Items > a {
+  font-size:2.5rem;
+  border-bottom:3px solid black;
+  }
+nav{
+  display:visible;
+  overflow:visible;
+  height:7vh;
+}
+.hamNavInner{
+  display:flex;
+}
+.hamNavActive{
+  height:100vh;
+}
+.hamNav-Icon {
+  width:2rem;
+}
+.hamNav-Icon{
+  height:3rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  margin-left:5%;
+  margin-top:5%;
+}
+.navIconElement{
+  background:black;
+  height:5px;
+  margin-top:12%;
+}
 @media (min-width:768px) {
   footer{
     font-size:1rem;
@@ -140,6 +195,7 @@ h2{
   padding:0.5rem;
   width:99vw;
   height:7vh;
+  overflow:hidden;
 }
 .nav-Items{
   width:50%;

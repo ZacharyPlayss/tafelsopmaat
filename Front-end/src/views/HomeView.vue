@@ -24,7 +24,7 @@ export default {
     padding:0;
   }
   .home{
-    background:url("../assets/images/Tafel_1.png") 100%/100% no-repeat  ;
+    background:url("../assets/images/Home.webp") 100% no-repeat  ;
     height:82vh;
     display:flex;
   }
@@ -45,6 +45,9 @@ export default {
     margin-left:var(--leftTextMargin);
   }
   @media (min-width:768px) {
+    .home{
+      background:url("../assets/images/Home.webp") 100%/100% no-repeat  ;
+    }
     h1{
       width:50%;
       font-size:4rem;

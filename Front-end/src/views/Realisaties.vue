@@ -110,7 +110,7 @@ export default{
 <style>
 .Realisaties{
     height:var(--mainHeight);
-    background:var(--realisatiesImage) 100%/100% no-repeat;
+    background:var(--realisatiesImage) 100% no-repeat;
 }
 .realisatiesImgContainer{
     margin:0 auto;
@@ -145,6 +145,10 @@ div img {
     width: 90vw;
 }
 @media (min-width:768px){
+        .Realisaties{
+            height:var(--mainHeight);
+            background:var(--realisatiesImage) 100%/100% no-repeat;
+    }
     .images{
         width:40vw;
     }

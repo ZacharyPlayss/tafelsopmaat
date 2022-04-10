@@ -14,7 +14,7 @@
 <style>
 .Productinformatie{
     height:var(--mainHeight);
-    background:var(--productinfoImage) 100%/100% no-repeat;
+    background:var(--productinfoImage) 100% no-repeat;
 }
 
 .Productinformatie > ul{
@@ -35,6 +35,9 @@
     margin-top:1%;
 }
 @media (min-width:768px) {
+    .Productinformatie{
+        background:var(--productinfoImage) 100%/100% no-repeat;
+    }
     .Productinformatie > ul{
         margin-top:3%;
          font-size:2rem;
