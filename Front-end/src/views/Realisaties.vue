@@ -84,30 +84,12 @@ export default{
             galleryImages: []
         }
     },
-    methods:{
-        // fetchImages: function () {
-        //     let url = "https://localhost:44328/api/Galleryimages";
-        //     this.images = [];
-        //     fetch(url)
-        //     .then( (response) => {
-        //         if(response.status == 200){
-        //             return response.json();
-        //         }
-        //         else{
-        //             throw `Error with status ${response.status}`;
-        //         }
-        //     } )
-        //     .then((images) => {
-        //         this.galleryImages = images;
-        //     })
-        //     .catch((error) => {
-        //         this.error = error;
-        //     })
-        // }
-    }
 }
 </script>
 <style>
+::-webkit-scrollbar{
+    display:none;
+}
 .Realisaties{
     height:var(--mainHeight);
     background:var(--realisatiesImage) 100% no-repeat;
@@ -117,8 +99,9 @@ export default{
     width:90%;
     height:83%;
     display:flex;
-    flex-direction:column;
-    overflow: hidden;
+    flex-direction:row;
+    overflow-y: scroll;
+    overflow-x: hidden;
     flex-wrap: wrap;  
 }
 .images{
@@ -132,13 +115,6 @@ export default{
 div img {
     height:100%;
     object-fit:contain;
-}
-
-    .realisatiesImgContainer{
-    display:flex;
-    flex-direction:row;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 .images{
     margin-left:4%;

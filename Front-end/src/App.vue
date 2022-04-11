@@ -7,7 +7,7 @@
         <div class="navIconElement"/>
       </div>
     </div>
-    <div class="hamNav-Items"  v-bind:class="{hamNavInner: hamNavInner}">
+    <div class="hamNav-Items" v-on:click="hamNavInner = !hamNavInner" v-bind:class="{hamNavInner: hamNavInner}">
       <router-link to="/">Home</router-link> 
       <router-link to="/about">Over ons</router-link>
       <router-link to="/Realisaties">Realisaties</router-link>
