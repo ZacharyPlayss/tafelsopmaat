@@ -2,7 +2,7 @@
   <div class="home">
     <div class="homeText">
       <h1>Tafels op maat Hasselt</h1>
-      <p>Epoxy, Tafels uit massief eikenhout, boomstambladen.</p>
+      <p>Epoxy tafels, Epoxy gieterij en tafels die op maat gemaakt worden van massief oud en nieuwe houtsoorten en boomstambladen, om naar onze showroom/atelier en stel uw eigen tafel samen bij op Kuringersteenweg 275A 3500 Hasselt. Whatsapp 0466-308043</p>
     </div>
   </div>
 </template>
@@ -43,6 +43,7 @@ export default {
     font-size:1.2rem;
     color:var(--color2);
     margin-left:var(--leftTextMargin);
+    width:50ch;
   }
   @media (min-width:768px) {
     .home{
@@ -53,7 +54,8 @@ export default {
       font-size:4rem;
     }
     p{
-      font-size:2.5rem;
+      font-size:2rem;
+      width:30ch;
     }
   }
   @media (min-width:1385px) {
@@ -62,6 +64,7 @@ export default {
     }
     p{
       font-size:2.3rem;
+      width:75ch;
     }
   }
 </style>
