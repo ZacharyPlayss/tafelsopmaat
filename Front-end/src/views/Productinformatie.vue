@@ -2,9 +2,10 @@
   <div class="Productinformatie">
       <h2>Productinformatie</h2>
       <ul>
-          <li>Tafels op maat uit massief eikenhout en boomstambladen.</li>
           <li>Epoxy tafels</li>
-          <li>Epoxy gieterij</li>
+          <li>Epoxy gieterij en tafels die op maat gemaakt worden van massief oud en nieuwe houtsoorten en boomstambladen,</li>
+          <li>kom naar onze showroom/atelier en stel uw eigen tafel samen bij op Kuringersteenweg 275A 3500 Hasselt. </li>
+          <li>Whatsapp 0466-308043</li>
       </ul>
        <!-- <p>Kom vrijblijvend langs en stel zelf uw tafel samen!</p>-->
       <p>Geïnteresseerd? Neem snel contact met ons op!</p>
@@ -50,7 +51,7 @@
 @media (min-width:1385px) {
     .Productinformatie > ul{
          font-size:3rem;
-         margin-top:5%;
+         margin-top:0%;
     }
      .Productinformatie > p{
     margin-top:2%;
