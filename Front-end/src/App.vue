@@ -30,7 +30,6 @@
     <ul class="footerList">
       <li>+32 466 30 80 43</li>
       <li>Kuringersteenweg 275A 3500 Hasselt België</li>
-      <li>info@hititbv.be</li>
       <li>info@tafelsopmaathasselt.be</li>
     </ul>
   </footer>

@@ -87,9 +87,9 @@ export default{
 }
 </script>
 <style>
-::-webkit-scrollbar{
+/*::-webkit-scrollbar{
     display:none;
-}
+}*/
 .Realisaties{
     height:var(--mainHeight);
     background:var(--realisatiesImage) 100% no-repeat;

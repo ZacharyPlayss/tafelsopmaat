@@ -2,10 +2,7 @@
   <div class="about">
     <div class="aboutText">
       <h2>Over ons</h2>
-      <p>Onze specialisatie ligt bij tafels op maat.
-        Op zoek naar een prachtige eettafel, kleine bijzettafel, salontafels, tuintafels, horecatafels...
-        Dan bent  bij ons aan het juiste adress!
-      </p>
+      <p>Epoxy tafels, Epoxy gieterij en tafels die op maat gemaakt worden van massief oud en nieuwe houtsoorten en boomstambladen, om naar onze showroom/atelier en stel uw eigen tafel samen bij op Kuringersteenweg 275A 3500 Hasselt. Whatsapp 0466-308043</p>
       <button><router-link to="/Contact">Contact</router-link></button>
     </div>
     <div class="aboutImage">

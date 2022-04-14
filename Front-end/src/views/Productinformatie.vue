@@ -3,7 +3,7 @@
       <h2>Productinformatie</h2>
       <ul>
           <li>Epoxy tafels</li>
-          <li>Epoxy gieterij en tafels die op maat gemaakt worden van massief oud en nieuwe houtsoorten en boomstambladen,</li>
+          <li>Epoxy gieterij en tafels die op maat gemaakt worden van massieve houtsoorten en boomstambladen,</li>
           <li>kom naar onze showroom/atelier en stel uw eigen tafel samen bij op Kuringersteenweg 275A 3500 Hasselt. </li>
           <li>Whatsapp 0466-308043</li>
       </ul>
