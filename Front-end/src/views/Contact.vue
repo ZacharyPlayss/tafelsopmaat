@@ -2,18 +2,18 @@
   <div class="Contact">
       <h2>Contact</h2>
       <div class="contactContainer">
-        <div class="onlineContact">
-            <h3>Online</h3>
-            <p>+32 466 30 80 43</p>
-            <p>facebook.com/tafelsopmaathasselt</p>     
-            <p>instagram.com/tafelsopmaat</p>
-            <p>info@hitibv.be</p>
-            </div>
-        <div class="irlContact">
-            <h3>Of kom langs te:</h3>
-            <p>Kuringersteenweg 275A <br>
-            3500 Hasselt België</p>
-        </div>
+       <form>
+           <input type="text" name="Contact-Name" placeholder="Naam">
+           <input type="email" name="Contact-Email" placeholder="E-mail">
+           <textarea name="Contact-Message" rows="6" cols="20">
+           </textarea>
+           <button type="submit" value="Submit">Versturen</button>
+       </form>
+       <ul>
+           <li>+32 466 30 80 43</li>
+           <li><a href="http://www.facebook.com/tafelsopmaathasselt">facebook.com/tafelsopmaathasselt</a></li>
+           <li><a href="http://www.instagram.com/tafelsopmaat">instagram.com/tafelsopmaat</a></li>
+       </ul>
       </div>
   </div>
 </template>
@@ -39,11 +39,22 @@
     align-items:center;
     justify-content:space-evenly;
 }
+.contactContainer > form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+input{
+    margin-top:5%;
+}
 .onlineContact{
     width:85%;
 }
 .irlContact{
 width:85%;
+}
+li{
+    font-size:1.5rem;
 }
 @media (min-width:768px) {
     .Contact{
